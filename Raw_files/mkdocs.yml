@@ -1,19 +1,51 @@
-site_name: My Docs
+site_name: mkdocs learning
 nav:
    - Home: index.md
    - Testing page: Education.md
 
-theme: readthedocs
+theme:
+    name: material
+    highlightjs: true
+    hljs_languages:
+        - yaml
+        - rust
+    icon:
+        admonition:
+            note: fontawesome/solid/sticky-note
+            abstract: fontawesome/solid/book
+            info: fontawesome/solid/info-circle
+            tip: fontawesome/solid/bullhorn
+            success: fontawesome/solid/check
+            question: fontawesome/solid/question-circle
+            warning: fontawesome/solid/exclamation-triangle
+            failure: fontawesome/solid/bomb
+            danger: fontawesome/solid/skull
+            bug: fontawesome/solid/robot
+            example: fontawesome/solid/flask
+            quote: fontawesome/solid/quote-left
+    <palette:
+           scheme: slate>
+
+
 extra_javascript:
     - https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+markdown_extensions:
+
 
 markdown_extensions:
-    - mdx_math
-    - attr_list
-    - md_in_html
-    - pymdownx.highlight:
-         anchor_linenums: true
-    - pymdownx.inlinehilite
-    - pymdownx.snippets
-    - pymdownx.superfences
-    - tables
+  - attr_list
+  - md_in_html
+  - pymdownx.superfences
+  - abbr
+  - pymdownx.snippets
+  - mdx_math
+  - pymdownx.highlight:
+       anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - tables
+  - admonition
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg

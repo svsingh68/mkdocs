@@ -1,5 +1,5 @@
 # Testing page
-The <code> mkdcos.yml </code> file detail is as shown:
+The <code> mkdocs.yml </code> file detail is as shown:
 
 ```bash
 site_name: My Docs
